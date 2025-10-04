@@ -2,7 +2,6 @@
 import requests
 import os
 
-
 #defining the function
 def custom_search(query=None):
     #see if there's a query or not
@@ -48,4 +47,5 @@ def custom_search(query=None):
 if __name__ == "__main__":
     print(custom_search())
     
+
 
