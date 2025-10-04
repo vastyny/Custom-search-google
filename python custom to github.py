@@ -1,9 +1,7 @@
 #handling path and the requests
 import requests
 import os
-#handling image
-from io import BytesIO
-from PIL import Image
+
 
 #defining the function
 def custom_search(query=None):
@@ -42,11 +40,12 @@ def custom_search(query=None):
         if "items" not in results:
             raise Exception("No items")
         else:
-            print(results)
+            return results
     except Exception as e:
         print(e)
 
 #if you are running this program then it runs the custom search
 if __name__ == "__main__":
-    custom_search()
+    print(custom_search())
     
+
